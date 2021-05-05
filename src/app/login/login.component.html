@@ -1,0 +1,21 @@
+<h3 style="text-align: center;">Login Form</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <label for="Email">Enter Email:</label>
+      <input class="form-control" type="text" placeholder="Enter Email" #Email>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <label for="password">Enter password:</label>
+      <input class="form-control" type="password" placeholder="Enter password " #password>
+    </div>
+  </div>&nbsp;
+  <div class="row">
+    <div class="col-md-12">
+      <button class="btn btn-primary" (click)="login(Email.value,password.value)">Login</button>
+    </div>
+  </div>
+</div>
+{{msg}}
